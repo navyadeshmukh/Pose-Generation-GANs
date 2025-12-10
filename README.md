@@ -3,17 +3,14 @@
 
 ## Objective
 
-The objective of this project is to implement the **Deformable Generative Adversarial Network (GAN)** architecture proposed by Siarohin et al. for synthesizing person images conditioned on a specific target pose.
+The objective of this project is to implement the **Deformable Generative Adversarial Network (GAN)** architecture proposed in the Research Paper *arXiv preprint arXiv:1905.00007* by Siarohin et al. for synthesizing person images conditioned on a specific target pose.
 
 Specifically, given a **source image ($X_a$)** of a person and a **target pose map ($H_b$)**, the model is intended to generate a new, realistic image ($\hat{X}_b$) of that person in the novel pose while preserving the appearance details from $X_a$.
-
-
 
 ---
 
 ## Approach & Implementation Milestones
-
-This project built upon foundational knowledge and culminated in the implementation of the pose-guided architecture, taking heavy reference from the work of Aliaksandr Siarohin et al.
+This project built upon fundamental Machine Learning and Deep Learning concepts, culminating in the final PoseGAN architecture.
 
 ### 1. Foundational Deep Learning
 * Learned basic concepts of Neural Networks, Machine Learning, optimizers, and hyperparameter tuning.
@@ -30,7 +27,7 @@ This project built upon foundational knowledge and culminated in the implementat
 
 ---
 
-## Custom Dataset: `MarketPoseDataset`
+## Custom Dataset: `Market-1501 Dataset`
 
 This project utilizes a custom PyTorch dataset class, `MarketPoseDataset`, designed for the task using the **Market-1501 dataset**.
 
@@ -44,10 +41,10 @@ The dataset uses pairs of images of the same person: a **source image ($X_a$)** 
 
 ### Dataset Item Structure
 Each item returned by the dataset is a dictionary containing the following tensors:
-1.  **Source image ($X_a$)**
-2.  **Target image ($X_b$)**
-3.  **Source pose map ($H_a$)**
-4.  **Target pose map ($H_b$)**
+1.  **Source image**
+2.  **Target image**
+3.  **Source pose map**
+4.  **Target pose map**
 
 ---
 
@@ -114,3 +111,7 @@ This project is an implementation attempt of the architecture described in:
 * **Siarohin, A., Sangineto, E., Lathuilière, S., & Sebe, N. (2019). Appearance and Pose-Conditioned Human Image Generation using Deformable GANs.** *arXiv preprint arXiv:1905.00007.*
     * **arXiv Link:** https://arxiv.org/abs/1905.00007
     * **CVPR 2018 Version (Prior):** *Deformable GANs for Pose-based Human Image Generation.*
+ 
+### Code Repositories Acknowledged:
+* **Original Implementation (TensorFlow):** [https://github.com/AliaksandrSiarohin/pose-gan](https://github.com/AliaksandrSiarohin/pose-gan)
+* **PyTorch Reference Implementation:** [https://github.com/saurabhsharma1993/pose-transfer](https://github.com/saurabhsharma1993/pose-transfer)
