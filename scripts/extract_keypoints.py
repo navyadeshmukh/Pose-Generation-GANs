@@ -5,8 +5,6 @@ import numpy as np
 from ultralytics import YOLO  # (assuming this is a custom class)
 
  # Import the YOLO class for inference
-
-
 image_dir = "data/market-1501/bounding_box_train"
 out_dir = "data/keypoints/keypoints.json"  # Output JSON file path
 yolo_path = "HPE/yolo11n-pose.pt"         # Use forward slashes for cross-platform compatibility

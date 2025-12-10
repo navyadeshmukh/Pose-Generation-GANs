@@ -68,7 +68,7 @@ class MarketPoseDataset(Dataset):
         # Load pose maps
         src_pose = torch.from_numpy(np.load(src_pose_path)).float()
         tgt_pose = torch.from_numpy(np.load(tgt_pose_path)).float()
-
+        
         return {
             "src_img": src_img,
             "tgt_img": tgt_img,

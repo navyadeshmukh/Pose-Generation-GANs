@@ -21,6 +21,7 @@ class MarketPoseDataset(Dataset):
         self.pairs = []
 
         # Read CSV and filter pairs with missing files
+        
         with open(pairs_csv, 'r') as f:
             for line in f:
                 src_name, tgt_name = line.strip().split(',')

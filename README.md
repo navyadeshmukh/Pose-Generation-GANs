@@ -81,6 +81,8 @@ The Generator ($G$) is a U-Net-based structure designed for pose-guided feature 
 
 > **Core Innovation Acknowledged:** The use of **Deformable Skip Connections** is crucial to address the large pixel-to-pixel misalignments caused by significant pose differences, which standard skip connections cannot handle reliably.
 
+<center><img src="./thumbnails/warp.png"></center>
+
 ### Discriminator Inputs
 
 The Discriminator ($D$) is tasked with distinguishing between:
