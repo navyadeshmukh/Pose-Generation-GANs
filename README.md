@@ -55,9 +55,9 @@ Each item returned by the dataset is a dictionary containing the following tenso
     <th>Source Img</th>
   </tr>
   <tr>
-    <td style="padding-right:50px;"><img src="./thumbnails/heatmap.png" style="width:50px;"></td>
-    <td style="padding-right:50px;"><img src="./thumbnails/source image.jpg" style="width:300px;"></td>
-    <td><img src="./thumbnails/source img.jpg" style="width:300px;"></td>
+    <td style="padding-right:50px;"><img src="./thumbnails/heatmap.png" style="width:210px;"></td>
+    <td style="padding-right:50px;"><img src="./thumbnails/source image.jpg" style="width:170px;"></td>
+    <td><img src="./thumbnails/source img.jpg" style="width:170px;"></td>
   </tr>
 </table>
 
