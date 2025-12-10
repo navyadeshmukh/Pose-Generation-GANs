@@ -48,11 +48,26 @@ Each item returned by the dataset is a dictionary containing the following tenso
 3.  **Source pose map**
 4.  **Target pose map**
 
+<table>
+  <tr>
+    <th>Body Heatmap</th>
+    <th>Source Image</th>
+    <th>Source Img</th>
+  </tr>
+  <tr>
+    <td style="padding-right:50px;"><img src="./thumbnails/heatmap.png" style="width:200px;"></td>
+    <td style="padding-right:50px;"><img src="./thumbnails/source image.jpg" style="width:200px;"></td>
+    <td><img src="./thumbnails/source img.jpg" style="width:200px;"></td>
+  </tr>
+</table>
+
 ---
 
 ## Model Architecture Overview
 
 The core model is a Generative Adversarial Network (GAN) framework, implementing the key components proposed in the reference paper.
+
+<center><img src="./thumbnails/model architecture.jpg"></center>
 
 ### Generator Architecture: Deformable Generator
 
@@ -93,13 +108,8 @@ A composite loss that encourages realism and identity preservation:
 
 ---
 
-## Results
-
-The implementation successfully demonstrates the capability of generating human images conditioned on a target pose, effectively re-posing the person while preserving their appearance.
-
-
-
-### Current Results Commentary
+### Current Results
+<img width="835" height="381" alt="image" src="./thumbnails/My_result.png" />
 
 The current generated images exhibit some **blurriness and lack of fine detail**. This is primarily attributed to:
 * **Insufficient training epochs/data size:** The model requires extensive training on a large dataset to fully converge and capture high-frequency details.
