@@ -1,3 +1,5 @@
+Implementation of Deformable GANs on Market-1501 dataset for pose-conditioned human image synthesis.
+
 # Pose Conditioned Human Image Generation using GANs
 ---
 
